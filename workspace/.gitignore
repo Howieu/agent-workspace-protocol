@@ -1,0 +1,8 @@
+# 只跟踪共享文件；各项目是独立仓库
+/*
+!/.gitignore
+!/README.md
+!/AGENTS.md
+!/CLAUDE.md
+!/_shared/
+.DS_Store
