@@ -38,11 +38,13 @@ mkdir -p ~/.config/git && echo ".worktrees/" >> ~/.config/git/ignore
 
 3. 在 `~/agent-workspace` 开对话，说"新项目：<名字>，要做 <什么>"。
 
+4. 给这个项目建一个会话分组：Claude Desktop 里新建一个环境，工作目录选 `~/agent-workspace/<名字>`，关掉 worktree（分支由 agent 在项目里自己开）。以后这个项目的对话都在这里开，开场说"继续"。其他工具同理：在项目目录打开。
+
 ## 三句开场白
 
 | 你说 | 结果 |
 | --- | --- |
-| 继续 <项目> | 按 HANDOFF 的下一步接着做 |
+| 继续 <项目> | 按 HANDOFF 的下一步接着做；在项目环境里只说"继续" |
 | <项目>：<要什么> | 先判断归哪份 spec，告诉你结论再动手；新项目说"新项目：<名字>" |
 | 收工 | 可选。归档交接、确认长期规则、给下次的开场白 |
 
@@ -65,16 +67,18 @@ mkdir -p ~/.config/git && echo ".worktrees/" >> ~/.config/git/ignore
 
 每完成一个子任务，agent 立刻提交代码、勾掉 spec 里的任务和验收项、重写 HANDOFF 的现状和下一步、更新会话表里自己那行的"最后更新"。任何时候关掉对话都不丢进度，下次说"继续 <项目>"就接上。超过 2 小时没更新的会话行，下一个 agent 当作已结束删掉。
 
+长期规矩直接说"以后都……""记住……"，agent 写进项目的 AGENTS.md。不要靠工具的自动记忆：它按文件夹分开存，换个环境、换个工具就读不到。
+
 ## 目录
 
 ```
-~/agent-workspace/                对话永远在这里开
+~/agent-workspace/                新建项目、跨项目时在这里开对话
 ├── AGENTS.md · CLAUDE.md         路由规则
 ├── README.md                     项目索引
 ├── _shared/
 │   ├── AGENT-PROTOCOL.md         协议
 │   └── templates/                AGENTS.md · HANDOFF.md · spec.md
-└── <项目>/                       每个项目一个独立 git 仓库
+└── <项目>/                       独立 git 仓库，平时在这里开对话
     ├── AGENTS.md · CLAUDE.md     项目规则
     ├── .agent/HANDOFF.md         全局进度，只在 main
     ├── .agent/log/               旧交接归档

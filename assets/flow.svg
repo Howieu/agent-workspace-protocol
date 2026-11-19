@@ -1,6 +1,6 @@
 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 680 770" width="680" height="770" role="img" aria-labelledby="flow-title flow-desc">
 <title id="flow-title">项目主流程</title>
-<desc id="flow-desc">在工作区根目录开对话，按三种开场白分流，经 spec 确认、分支实现、你确认合并，回到 main 并收工。</desc>
+<desc id="flow-desc">在项目环境或工作区开对话，按三种开场白分流，经 spec 确认、分支实现、你确认合并，回到 main 并收工。</desc>
 <style>
 svg{--ink:#1f2328;--mut:#59636e;--line:#d1d9e0;--flow:#1a7f37;--uf:#fbefff;--us:#8250df;--ut:#512a97;--af:#dafbe1;--as:#1a7f37;--at:#0f5323;--gf:#f6f8fa;--gs:#d1d9e0}
 @media (prefers-color-scheme:dark){svg{--ink:#f0f6fc;--mut:#9198a1;--line:#3d444d;--flow:#3fb950;--uf:#271a3f;--us:#a371f7;--ut:#e2d1ff;--af:#0f2a1a;--as:#3fb950;--at:#aff5b4;--gf:#151b23;--gs:#3d444d}}
@@ -33,7 +33,7 @@ rect{stroke-width:1}
 <path class="e" d="M340 556V594" marker-end="url(#ah)"/>
 <path class="e" d="M340 652V690" marker-end="url(#ah)"/>
 <path class="f" d="M340 76V114"/><path class="f" d="M340 172V210"/><path class="f" d="M340 268V306"/><path class="f" d="M340 364V402"/><path class="f" d="M340 460V498"/><path class="f" d="M340 556V594"/><path class="f" d="M340 652V690"/>
-<g class="g n" style="animation-delay:0s"><rect x="210" y="20" width="260" height="56" rx="8"/><text class="t" x="340" y="38">开对话</text><text class="s" x="340" y="58">在工作区根目录</text></g>
+<g class="g n" style="animation-delay:0s"><rect x="210" y="20" width="260" height="56" rx="8"/><text class="t" x="340" y="38">开对话</text><text class="s" x="340" y="58">项目环境或工作区</text></g>
 <g class="u"><rect x="50" y="116" width="180" height="56" rx="8"/><text class="t" x="140" y="134">“继续 my-app”</text><text class="s" x="140" y="154">接着上次做</text></g>
 <g class="u n" style="animation-delay:.9s"><rect x="250" y="116" width="180" height="56" rx="8"/><text class="t" x="340" y="134">“my-app：新增 X”</text><text class="s" x="340" y="154">提一个需求</text></g>
 <g class="u"><rect x="450" y="116" width="180" height="56" rx="8"/><text class="t" x="540" y="134">“新项目：X”</text><text class="s" x="540" y="154">从零开始</text></g>

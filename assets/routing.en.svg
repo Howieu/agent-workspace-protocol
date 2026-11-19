@@ -1,0 +1,39 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 680 384" width="680" height="384" role="img" aria-labelledby="routing-en-title routing-en-desc">
+<title id="routing-en-title">Spec routing</title>
+<desc id="routing-en-desc">A request is checked against existing specs and sorted into four cases: add a task, fix, partly supersede, or write a new spec; a new spec starts only after you approve it.</desc>
+<style>
+svg{--ink:#1f2328;--mut:#59636e;--line:#d1d9e0;--flow:#1a7f37;--uf:#fbefff;--us:#8250df;--ut:#512a97;--af:#dafbe1;--as:#1a7f37;--at:#0f5323;--gf:#f6f8fa;--gs:#d1d9e0}
+@media (prefers-color-scheme:dark){svg{--ink:#f0f6fc;--mut:#9198a1;--line:#3d444d;--flow:#3fb950;--uf:#271a3f;--us:#a371f7;--ut:#e2d1ff;--af:#0f2a1a;--as:#3fb950;--at:#aff5b4;--gf:#151b23;--gs:#3d444d}}
+text{font-family:-apple-system,"PingFang SC","Microsoft YaHei","Noto Sans CJK SC",sans-serif;text-anchor:middle;dominant-baseline:central}
+.t{font-size:14px;font-weight:600}.s{font-size:12px}
+.u rect{fill:var(--uf);stroke:var(--us)}.u .t{fill:var(--ut)}.u .s{fill:var(--us)}
+.a rect{fill:var(--af);stroke:var(--as)}.a .t{fill:var(--at)}.a .s{fill:var(--as)}
+.g rect{fill:var(--gf);stroke:var(--gs)}.g .t{fill:var(--ink)}.g .s{fill:var(--mut)}
+rect{stroke-width:1}
+.e{fill:none;stroke:var(--line);stroke-width:1.5}
+.f{fill:none;stroke:var(--flow);stroke-width:2;stroke-dasharray:6 8;animation:flow 1s linear infinite}
+.n{animation:pulse 7.2s ease-in-out infinite both}
+@keyframes flow{to{stroke-dashoffset:-14}}
+@keyframes pulse{0%,100%{opacity:.55}4%,10%{opacity:1}14%,99%{opacity:.55}}
+@media (prefers-reduced-motion:reduce){.f,.n{animation:none;opacity:1}}
+.lg{font-size:12px;fill:var(--mut);text-anchor:start}
+</style>
+<defs><marker id="ah" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="6" markerHeight="6" orient="auto"><path d="M2 1L8 5L2 9" fill="none" stroke="var(--mut)" stroke-width="1.5" stroke-linecap="round"/></marker></defs>
+<path class="e" d="M340 76V96H112V114" marker-end="url(#ah)"/>
+<path class="e" d="M340 96H264V114" marker-end="url(#ah)"/>
+<path class="e" d="M340 96H416V114" marker-end="url(#ah)"/>
+<path class="e" d="M340 96H568V114" marker-end="url(#ah)"/>
+<path class="e" d="M416 172V210" marker-end="url(#ah)"/>
+<path class="e" d="M568 172V210" marker-end="url(#ah)"/>
+<path class="e" d="M112 172V336H218" marker-end="url(#ah)"/>
+<path class="e" d="M264 172V306" marker-end="url(#ah)"/>
+<path class="e" d="M492 268V336H462" marker-end="url(#ah)"/>
+<path class="f" d="M340 76V96H568V114"/><path class="f" d="M568 172V210"/><path class="f" d="M492 268V336H462"/>
+<g class="a"><rect x="220" y="20" width="240" height="56" rx="8"/><text class="t" x="340" y="38">Is there a spec for this?</text><text class="s" x="340" y="58">tells you its call first</text></g>
+<g class="g"><rect x="44" y="116" width="136" height="56" rx="8"/><text class="t" x="112" y="134">Active spec</text><text class="s" x="112" y="154">add task, same branch</text></g>
+<g class="g"><rect x="196" y="116" width="136" height="56" rx="8"/><text class="t" x="264" y="134">Done, same scope</text><text class="s" x="264" y="154">fix branch + log</text></g>
+<g class="g"><rect x="348" y="116" width="136" height="56" rx="8"/><text class="t" x="416" y="134">Done, new scope</text><text class="s" x="416" y="154">new spec supersedes</text></g>
+<g class="a"><rect x="500" y="116" width="136" height="56" rx="8"/><text class="t" x="568" y="134">None / new project</text><text class="s" x="568" y="154">write a new spec</text></g>
+<g class="u"><rect x="400" y="212" width="184" height="56" rx="8"/><text class="t" x="492" y="230">“go ahead”</text><text class="s" x="492" y="250">spec approved</text></g>
+<g class="a"><rect x="220" y="308" width="240" height="56" rx="8"/><text class="t" x="340" y="326">Start building</text><text class="s" x="340" y="346">on a branch, save as you go</text></g>
+</svg>

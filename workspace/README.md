@@ -1,6 +1,6 @@
 # 工作区
 
-对话一律在本目录开，开场白三种："继续 <项目>"、"<项目>：<要什么>"、"收工"（可选）。规则见 [_shared/AGENT-PROTOCOL.md](_shared/AGENT-PROTOCOL.md)。
+对话在项目目录开，新建项目或跨项目时在本目录开。开场白三种："继续 <项目>"、"<项目>：<要什么>"、"收工"（可选）。规则见 [_shared/AGENT-PROTOCOL.md](_shared/AGENT-PROTOCOL.md)。
 
 ## 项目索引
 
